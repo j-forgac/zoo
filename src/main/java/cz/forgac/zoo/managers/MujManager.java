@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 @ApplicationScoped
-public class mujManager {
+public class MujManager {
 	private HashMap<Integer, animalEntity> animals = new HashMap<>();
 
 	public HashMap<Integer, animalEntity> getAll() {

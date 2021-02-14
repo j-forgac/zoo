@@ -1,20 +1,19 @@
 package cz.forgac.zoo.resources;
 
 import cz.forgac.zoo.entities.animalEntity;
-import cz.forgac.zoo.managers.mujManager;
+import cz.forgac.zoo.managers.MujManager;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.HashMap;
 
 @Path("animals") // /api/users
 @Produces(MediaType.APPLICATION_JSON)
 public class UsersResource {
 
 	@Inject
-	private mujManager manager;
+	private MujManager manager;
 
 	@GET
 	public Response getAnimals(){
